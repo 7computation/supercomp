@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'roboto_slabregular';
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'roboto_slabregular';
+    src: url('../fonts/robotoslab/robotoslab-variablefont_wght.woff2') format('woff2'),
+         url('../fonts/robotoslab/robotoslab-variablefont_wght.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(209, 209, 209);
+}
+
+main {
+    background-color: white;
+    padding: 30px;
+    width: 50%;
+    height: 100vh;
+    color: rgb(79, 79, 79);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(79, 79, 79);
+    display: inline-block;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    main {
+        width: 100%;
+    }
+}

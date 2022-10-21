@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'roboto_slabregular';
+    color: rgb(79, 79, 79);
+}
+
+@font-face {
+    font-family: 'roboto_slabregular';
+    src: url('../fonts/robotoslab/robotoslab-variablefont_wght.woff2') format('woff2'),
+         url('../fonts/robotoslab/robotoslab-variablefont_wght.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.galleryimage {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+#leftcol {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#leftcol select, input, p {
+    margin-bottom: 5px;
+}
+
+#topcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#clickyimage {
+    height: 250px;
+    width:250px;
+    float:right;
+    image-rendering:crisp-edges;
+    cursor: pointer;
+}
+
+.link {
+    background-color: rgb(79, 79, 79);
+    padding: 10px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+body {
+    background-color: rgb(209, 209, 209);
+    margin: 0;
+    padding: 0;
+}
+
+input[type=submit] {
+    padding: 5px;
+    border: none;
+    font-size: 18px;
+    background-color: rgb(209, 209, 209);
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    opacity: 0.5;
+}
+
+#pagination {
+    display: block;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+#pagination a {
+    background-color: rgb(79, 79, 79);
+    padding: 10px;
+}
+
+#main {
+    background-color: white;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+#entries {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+    padding-bottom: 5px;
+}
+
+#active {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#talkypara {
+    font-size: 15px;
+    width:50%;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    #main {
+        width: auto;
+    }
+
+    .galleryimage {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    #clickyimage {
+        float: none;
+    }
+
+    #topcontainer {
+        display: block;
+    }
+
+    #leftcol {
+        display: block;
+        width: 100%;
+    }
+
+    #talkypara {
+        width: 100%;
+    }
+}

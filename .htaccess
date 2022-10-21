@@ -1,0 +1,13 @@
+ErrorDocument 404 /notfound.php
+
+Options +MultiViews
+AddHandler php5-script php
+AddType text/html php
+
+RewriteEngine on
+RewriteCond %{HTTPS} !on 
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$ 
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$ 
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^adoptable/([0-9]+)$ gallerytemplate.php?specificid=$1
